@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class ANCrystalBal;
+
+
+
 @interface ANViewController : UIViewController
+
+@property(strong,nonatomic) NSArray *predictions;
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+@property(strong,nonatomic) ANCrystalBal *CrystalBall;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundAnimation;
+
+-(void) makePrediction;
+
 
 @end
